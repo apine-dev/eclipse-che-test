@@ -16,7 +16,7 @@ public class TestController {
     @GetMapping("/hello-world")
     public ResponseEntity<String> get() {
         logger.info("Entro en el GET /api/prueba/hello-world");
-        return ResponseEntity.ok("Hola Mundo!");
+        return ResponseEntity.ok("Hola Mundo, prueba nueva!");
     }
 
 }
