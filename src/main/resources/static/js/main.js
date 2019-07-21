@@ -1,6 +1,7 @@
 console.log('Load')
 
-function apiCallHandler (a, b) {
+function apiCallHandler (selectedElement) {
     console.log('Entro en el API CALL')
-    console.log('Resultado de la suma de los numeros es: ', a + b)
+    console.log('Index del elemento seleccionado: ', selectedElement.value)
+    console.log('Text del elemento seleccionado: ', selectedElement.text)
 }

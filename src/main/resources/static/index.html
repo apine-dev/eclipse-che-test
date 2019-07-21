@@ -23,7 +23,15 @@
         <section id="plans">
             <h1 class="section-title">Choose your plan</h1>
             <p>Make sure you get the most for your money!</p>
-            <button id="btnCall" onclick="apiCallHandler(2, 5)">Call API</button>
+
+            <select id="apiList">
+                <option value="0">API 1</option>
+                <option value="1">API 2</option>
+                <option value="2">API 3</option>
+                <option value="3">API 4</option>
+            </select>
+
+            <button id="btnCall" onclick="apiCallHandler(apiList.options[apiList.selectedIndex])">Call API</button>
         </section>
     </main>
 </body>
