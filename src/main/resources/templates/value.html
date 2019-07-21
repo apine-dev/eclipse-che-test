@@ -8,21 +8,15 @@
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
-<!--    <link rel="stylesheet" href="stylesheets/main.css">-->
     <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}">
 
-<!--    <script type="text/javascript" src="javascripts/main.js"></script>-->
     <script src="/js/main.js" th:src="@{/js/main.js}"></script>
 </head>
 
 <body>
-    <main>
-        <section id="product-overview">
-            <h1>Get the freedom you deserve.</h1>
-        </section>
-        <section id="plans">
-            <h1 class="section-title">Choose your plan</h1>
-            <p>Make sure you get the most for your money!</p>
+    <main>s
+        <section id="info">
+            <p th:text="'Text from the server: ' + ${valor}"/>
             <button id="btnCall" onclick="apiCallHandler(2, 5)">Call API</button>
         </section>
     </main>
